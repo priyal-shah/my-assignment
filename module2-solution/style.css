@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;      
+}
+body{
+	font-size: 40px;
+	
+}
+header{
+	font-size: 175%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+section{
+	background-color: #00FFFF;
+	border: 1px solid black;
+	padding: 15px;
+	text-align: justify;
+	height: 1100px;
+}
+h1{
+	float: right;
+	font-size: 125%;
+	display:block;
+	border:1px solid black;
+	padding: 10px;
+	text-align: center;
+	margin: 20px;
+}
+
+.section1>h1{
+	background-color: #90EE90;
+}
+
+.section2>h1{
+	background-color: red;
+}
+.section3>h1{
+	background-color: #DEB887;
+}
+div{
+	clear:right;
+}
+	.section1{
+		width: 30%;
+		float: left;
+		margin-right:10px;
+		margin-left: 10px;
+	}
+	.section2{
+		width: 30%;
+		float: left;
+		margin-right: 10px;
+		
+	}
+	.section3{
+		width: 30%;
+		float: left;
+		margin-right: 10px;
+	}
+
+
+@media(min-width: 768px) and (max-width: 991px){
+	.section1{
+		width: 47%;
+		height: 900px;
+		margin-right:10px;
+		
+	}
+	.section2{
+		width: 47%;
+		margin-left: 10px;
+		height: 900px;
+	}
+	.section3{
+		clear: left;
+		width: 97%;
+		margin-top: 2%;
+		height: 600px;
+	}
+}
+
+@media (max-width: 767px){
+	.section1{
+		clear: left;
+		width: 100%;
+		height: 600px;
+		margin-top: 20px;
+	}
+	.section2{
+		clear: left;
+		width: 100%;
+		height: 600px;
+		margin-top: 20px;
+	}
+	.section3{
+		clear: left;
+		width: 100%;
+		height: 700px;
+		margin-top: 20px;
+	}
+
+}
