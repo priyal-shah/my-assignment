@@ -62,13 +62,14 @@ div{
 
 @media(min-width: 768px) and (max-width: 991px){
 	.section1{
-		width: 47%;
+		width: 46%;
 		height: 900px;
 		margin-right:10px;
+		margin-left: 10px;
 		
 	}
 	.section2{
-		width: 47%;
+		width: 46%;
 		margin-left: 10px;
 		height: 900px;
 	}
@@ -77,6 +78,7 @@ div{
 		width: 97%;
 		margin-top: 20px;
 		height: 600px;
+		margin-left: 10px;
 	}
 }
 
