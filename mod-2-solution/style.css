@@ -16,7 +16,7 @@ section{
 	border: 1px solid black;
 	padding: 15px;
 	text-align: justify;
-	height: 1100px;
+	height: 1400px;
 }
 h1{
 	float: right;
@@ -25,7 +25,8 @@ h1{
 	border:1px solid black;
 	padding: 10px;
 	text-align: center;
-	margin: 20px;
+	margin: 10px;
+	width: 300px;
 }
 
 .section1>h1{
@@ -45,6 +46,7 @@ div{
 		width: 30%;
 		float: left;
 		margin-right:10px;
+		margin-left: 10px;
 		
 	}
 	.section2{
