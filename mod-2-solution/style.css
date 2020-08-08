@@ -60,10 +60,10 @@ div{
 	}
 
 
-@media(min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px){
 	.section1{
 		width: 46%;
-		height: 900px;
+		height: 1000px;
 		margin-right:10px;
 		margin-left: 10px;
 		
@@ -71,7 +71,7 @@ div{
 	.section2{
 		width: 46%;
 		margin-left: 10px;
-		height: 900px;
+		height: 1000px;
 	}
 	.section3{
 		clear: left;
