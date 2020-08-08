@@ -3,6 +3,7 @@
 }
 body{
 	font-size: 40px;
+	background-color: #FF7F50;
 	
 }
 header{
@@ -74,8 +75,9 @@ div{
 	}
 	.section3{
 		clear: left;
-		width: 97%;
+		width: 95%;
 		margin-top: 20px;
+		margin-left: 20px;
 		height: 600px;
 	}
 }
