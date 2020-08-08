@@ -4,7 +4,6 @@
 body{
 	font-size: 40px;
 	background-color: #FF7F50;
-	
 }
 header{
 	font-size: 175%;
@@ -14,19 +13,20 @@ header{
 section{
 	background-color: #00FFFF;
 	border: 1px solid black;
-	padding: 15px;
+	padding: 20px;
 	text-align: justify;
-	height: 1400px;
+	height: 400px;
 }
 h1{
 	float: right;
 	font-size: 125%;
-	display:block;
+	display: block;
 	border:1px solid black;
 	padding: 10px;
 	text-align: center;
 	margin: 10px;
-	width: 300px;
+	
+
 }
 
 .section1>h1{
@@ -42,66 +42,40 @@ h1{
 div{
 	clear:right;
 }
-	.section1{
-		width: 30%;
-		float: left;
-		margin-right:10px;
-		margin-left: 10px;
-		
-	}
-	.section2{
-		width: 30%;
-		float: left;
-		margin-right: 10px;
-		
-	}
-	.section3{
-		width: 30%;
-		float: left;
-		margin-right: 10px;
-	}
 
 
-@media (min-width: 768px) and (max-width: 991px){
-	.section1{
-		width: 46%;
-		height: 1000px;
-		margin-right:10px;
-		margin-left: 10px;
-		
-	}
-	.section2{
-		width: 46%;
-		margin-left: 10px;
-		height: 1000px;
-	}
-	.section3{
-		clear: left;
-		width: 97%;
-		margin-top: 20px;
-		height: 600px;
-		margin-left: 10px;
+@media (min-width: 992px) {
+	section{
+		float: left;
+		width: 25%;
+		margin: 40px;
+
 	}
 }
 
-@media (max-width: 767px){
-	.section1{
-		clear: left;
-		width: 90%;
-		height: 600px;
-		margin-top: 20px;
+@media (min-width: 768px) and (max-width: 991px) {
+	.section1,.section2{
+		float: left;
+		width: 40%;
+		margin: 40px;
+		
 	}
 	.section2{
-		clear: left;
-		width: 90%;
-		height: 600px;
-		margin-top: 20px;
+		float: left;
+		width: 40%;
+		margin: 40px;
 	}
 	.section3{
 		clear: left;
-		width: 90%;
-		height: 700px;
-		margin-top: 20px;
+		width: 88%;
+		margin: 40px;
+		height: 200px;
+		margin-top: 50px;
 	}
-
+}
+@media (max-width: 767px) {
+	section{
+		width: 90%;
+		height: 500px;
+	}
 }
