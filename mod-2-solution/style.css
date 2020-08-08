@@ -43,19 +43,19 @@ div{
 	.section1{
 		width: 30%;
 		float: left;
-		margin-right:10px;
-		margin-left: 10px;
+		margin-right:20px;
+		margin-left: 20px;
 	}
 	.section2{
 		width: 30%;
 		float: left;
-		margin-right: 10px;
+		margin-right: 20px;
 		
 	}
 	.section3{
 		width: 30%;
 		float: left;
-		margin-right: 10px;
+		margin-right: 20px;
 	}
 
 
@@ -63,7 +63,8 @@ div{
 	.section1{
 		width: 47%;
 		height: 900px;
-		margin-right:10px;
+		margin-right:20px;
+		margin-left: 20px;
 		
 	}
 	.section2{
@@ -74,7 +75,7 @@ div{
 	.section3{
 		clear: left;
 		width: 97%;
-		margin-top: 2%;
+		margin-top: 20px;
 		height: 600px;
 	}
 }
