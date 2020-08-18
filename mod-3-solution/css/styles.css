@@ -38,6 +38,7 @@ body{
 #nav-list {
   margin-top: 30px;
   display: block;
+  border:solid black;
   
 }
 #nav-list a {
