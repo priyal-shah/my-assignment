@@ -63,7 +63,7 @@ body{
 }
 #main{
 	background-color:#f0ff19;
-	height: 1000px;
+	height: auto;
 	color: black;
 	padding: 15px;
 
