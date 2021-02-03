@@ -233,6 +233,9 @@ h3.menu-item-title {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
+  .sign-up-form{
+  width: 30%;
+ }
   .container .jumbotron {
     background: url('../images/shop_1200.jpg') no-repeat ;
     height: 724px;
@@ -253,6 +256,9 @@ h3.menu-item-title {
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
+  .sign-up-form{
+  width: 30%;
+ }
   /* Header */
   /* End Header */
 
@@ -278,6 +284,9 @@ h3.menu-item-title {
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+  .sign-up-form{
+  width: 40%;
+ }
   /* Home Page */
   .container .jumbotron {
     background: url('../images/shop_768.jpg') no-repeat;
@@ -455,7 +464,7 @@ width: 50px;
 
 /*sign in page*/
 .sign-up-form{
-  width:30%;
+  width:100%;
   box-shadow: 0 0 3px rgba(0,0,0,0.3);
   background:#fff;
   padding: 20px;
