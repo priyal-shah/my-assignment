@@ -300,6 +300,13 @@ h3.menu-item-title {
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
+  .container .jumbotron {
+    background: url('../images/shop_479.jpg') no-repeat;
+    height: 400px;
+  }
+  .sign-up-form{
+  width: 100%;
+ }
 
   /* Header */
   .navbar-brand {
