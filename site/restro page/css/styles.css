@@ -314,7 +314,7 @@ h3.menu-item-title {
     height: 400px;
   }
   .sign-up-form{
-  width: 100%;
+  width: 90%;
  }
 
   /* Header */
@@ -412,7 +412,7 @@ h3.menu-item-title {
     height: 400px;
   }
   .sign-up-form{
-  width: 100%;
+  width: 90%;
  }
   /* Header */
   .navbar-brand h1 { /* Restaurant name */
@@ -464,7 +464,7 @@ width: 50px;
 
 /*sign in page*/
 .sign-up-form{
-  width:100%;
+  width:90%;
   box-shadow: 0 0 3px rgba(0,0,0,0.3);
   background:#fff;
   padding: 20px;
