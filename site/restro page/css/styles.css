@@ -391,6 +391,13 @@ h3.menu-item-title {
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
+  .container .jumbotron {
+    background: url('../images/shop_479.jpg') no-repeat;
+    height: 500px;
+  }
+  .sign-up-form{
+  width: 100%;
+ }
   /* Header */
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 5px;
