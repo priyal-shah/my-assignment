@@ -409,7 +409,7 @@ h3.menu-item-title {
 @media (max-width: 479px) {
   .container .jumbotron {
     background: url('../images/shop_479.jpg') no-repeat;
-    height: 400px;
+    height: 280px;
   }
   .sign-up-form{
   width: 80%;
