@@ -1,0 +1,31 @@
+body{
+	background-image: url('..images/download.jpg');
+	background-color: #10a38d;
+	font-size: 60%;
+	color: solid black;
+}
+.h1{
+	margin-top: 50px;
+	margin-left: 40%;
+	margin-bottom: 50px;
+	color: #540550;
+
+}
+.container{
+	border:solid;
+	border-radius: 5%;
+	height: 300px;
+	width: 300px;
+	margin-left: 40%;
+    background-color: #f5e211;
+}
+.subcontainer{
+	padding: 5px;
+	margin-left: 18%;
+	margin-top: 15%;
+	margin-right: 20%;
+	background-color:#b0f04a;
+	border-radius: 5px;
+	border-color: #fff;
+	border: solid;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign in page</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" >
+		function signupnow(){
+	if(document.getElementById("Id").value==""){
+		alert("Enter your email or user Id");
+		document.getElementById('Id').focus();
+		return false;
+	}
+	if(document.getElementById("Passward").value==""){
+		alert("Enter passward");
+		document.getElementById('Passward').focus();
+		return false;
+	}
+	if(document.getElementById('Passward').value.length<6){
+		alert("Passward should contain atleast 6 characters!!");
+		return false;
+	}
+	return (true);
+}
+	</script>
+</head>
+<body>
+	<div class="signin_container" name="container1">
+		<header>Sign In</header>
+		<div class="signin_subcontainer" name="container2">
+			<p><input  class=" text" type="email" placeholder="enter your email id" id="Id"></p>
+			<p><input  class=" text" type="passward" placeholder="enter passward" id="Passward"></p>
+			<p ><a href="forgot passward.html" class="forgot_link">Forgot passward</a></p>
+			<p><a href="dashboard.html"><button class="button" onclick="return(signupnow())">Sign in</button></a></p>
+		</div>
+	</div>
+
+</body>
+</html>

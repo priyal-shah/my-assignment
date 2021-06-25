@@ -233,10 +233,25 @@ h3.menu-item-title {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
+  .sign-up-form{
+    width: 30%;
+  }
   .container .jumbotron {
     background: url('../images/shop_1200.jpg') no-repeat ;
     height: 724px;
   }
+
+  #aboutrow{
+  vertical-align: all;
+  padding-right: 42%;
+  padding-left:42%;
+}
+
+#abouttile{
+  border: 1px solid black;
+  width: 50%;
+  color:black;
+}
 }
 
 /********** Medium devices only **********/
@@ -247,9 +262,24 @@ h3.menu-item-title {
   /* Home Page */
   .container .jumbotron {
     background: url('../images/shop_992.jpg') no-repeat;
-    height: 598px;
+    height: 600px;
   }
   /* End Home Page */
+
+  #aboutrow{
+  vertical-align: all;
+  padding-right: 40%;
+  padding-left:40%;
+}
+
+#abouttile{
+  border: 1px solid black;
+  width: 50%;
+  color:black;
+}
+.sign-up-form{
+    width: 30%;
+  }
 }
 
 /********** Small devices only **********/
@@ -257,17 +287,26 @@ h3.menu-item-title {
   /* Home Page */
   .container .jumbotron {
     background: url('../images/shop_768.jpg') no-repeat;
-    height: 432px;
+    height: 500px;
   }
+
+  #aboutrow{
+  vertical-align: all;
+  padding-right: 30%;
+  padding-left:30%;
+}
   /* End Home Page */
+
+  #abouttile{
+  border: 1px solid black;
+  width: 50%;
+  color:black;
+}
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-  .container .jumbotron {
-    background: url('../images/shop_768.jpg') no-repeat;
-    height: 432px;
-  }
+
   /* Header */
   .navbar-brand {
     padding-top: 10px;
@@ -342,11 +381,26 @@ h3.menu-item-title {
   .menu-item-description {
     text-align: center;;
   }
+
+  #aboutrow{
+  vertical-align: all;
+  padding-right: 25%;
+  padding-left:25%;
+}
+#abouttile{
+  border: 1px solid black;
+  width: 50%;
+  color:black;
+}
 }
 
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
+  .container .jumbotron {
+    background: url('../images/shop_479.jpg') no-repeat;
+    height: 500px;
+  }
   /* Header */
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 5px;
@@ -368,7 +422,84 @@ h3.menu-item-title {
     float: left;
     width: 100%;
   }
+
+  #aboutrow{
+  vertical-align: all;
+  padding-right:30%;
+  padding-left:30%;
+  }
+#abouttile{
+  border: 1px solid black;
+  width: 95%;
+  color:black;
+ }
+ .sign-up-form{
+  width: 100%;
+ }
+}
+/*about page*/
+
+
+.abouttextbar{
+padding: 5px;
+width: 50px;
+}
+.aboutbutton{
+  padding: 2px;
+  margin-top: 30px;
+}
+#aboutheading{
+  margin-bottom: 40px;
 }
 
+/*sign in page*/
+.sign-up-form{
+  width:90%;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  background:#fff;
+  padding: 20px;
+  margin: 8% auto 0;
+  text-align: center;
+  align-content: center;
+  color:  #000000;
+}
+.sign-up-form h1{
+  color: #1c8adb;
+  margin-bottom: 20%;
+}
+ 
+.input-box{
+  border-radius: 20px;
+  padding: 10px;
+  margin: 1% ;
+  width: 100%;
+  border: 1px solid #999;
+  outline: none;
+}
+button{
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 1%;
+  border: none;
+  outline: none;
+}
 
+.signup-btn{
+  background-color: #1c8adb;
 
+}
+.twitter-btn{
+  background-color: #21afde;
+}
+.HR{
+  margin-top: 20px;
+  width: 80%;
+}
+.OR{
+  background: #fff;
+  width: 30px;
+  margin: -30 auto 10px;
+}

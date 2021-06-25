@@ -1,4 +1,4 @@
-<!doctype html>
+<<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -30,14 +30,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
           </button>
         </div>
         
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right" style="margin-top: 5%">
-            <li class="visible-xs active">
+            <li class="visible-xs ">
               <a href="index.html">
                 <span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
@@ -53,13 +51,14 @@
               <a href="https://goo.gl/maps/GdTmb8yGpJMEUrXW9" target="_blank">
                 <span class="glyphicon glyphicon-globe"></span><br class="hidden-xs"> Maps</a>
             </li>
-             <li>
-              <a href="signin page.html">
-                <span class="glyphicon glyphicon-log-in"></span><br class="hidden-xs">sign in</a>
+             <li class="active">
+              <a href="offer.html">
+                <span class="glyphicon glyphicon-log-in"></span><br class="hidden-xs">My Profile</a>
             </li>
+
             <li>
-              <a href="about page.html">
-                <span class="glyphicon glyphicon-log-in"></span><br class="hidden-xs">My Order</a>
+              <a href="#">
+                <span class="glyphicon glyphicon-log-in"></span><br class="hidden-xs"> My Order</a>
             </li>
            
             <li id="phone" class="hidden-xs">
@@ -72,47 +71,29 @@
     </nav><!-- #header-nav -->
   </header>
 
-  <div id="call-btn" class="visible-xs">
-    <a class="btn" href="tel:9425495964">
-    <span class="glyphicon glyphicon-earphone"></span>
-    9425495964
-    </a>
-  </div>
-  <div id="xs-deliver" class="text-center visible-xs">*best service</div>
+  <title>sign-up-form</title>
 
-  <div id="main-content" class="container">
-    <div class="jumbotron">
-      <img src="images/shop_767.JPG" alt="Picture of shop" class="img-responsive visible-xs">
-    </div>
-
-    <div id="home-tiles" class="row">
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="items.html"><div id="menu-tile"><span>items</span></div></a>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="single-category.html"><div id="specials-tile"><span>offers</span></div></a>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <a href="https://goo.gl/maps/GdTmb8yGpJMEUrXW9" target="_blank">
-          <div id="map-tile">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.398920512224!2d76.38979551493982!3d21.452858585770176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd8298e1b8523ad%3A0x12143e5832296ed!2sThakordas%20Haridas%20Shah!5e0!3m2!1sen!2sin!4v1598017355481!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <span>map</span>
-          </div>
-        </a>
-      </div>
-      <div class="text-center " id="payment"><span>Payment Methods:</span> <br>
-        cash<br>paytm<br>google pay<br>phone pay<br>card swiping 
-      </div>
-
-    </div><!-- End of #home-tiles -->
-  </div><!-- End of #main-content -->
+  <body>
+  	<div class="sign-up-form">
+  		<h1>Sign Up Now</h1>
+  		<form>
+  			<input type="email" class="input-box" placeholder="Your Email">
+  			<input type="password" class="input-box" placeholder="Your password">
+  			<p><span><imput type="checkbox"></span>I agree to the terms of service</p>
+  			<button type="button" class="signup-btn">sign up</button>
+  			<hr class="HR">
+  			<p class="or">OR</p>
+  			<button type="button" class="twitter-btn">Login with twitter</button>
+  			<p>Do you have an account?<a href="#">sign in</a></p>
+  		</form>
+  	</div>
+  </body>
 
   <footer class="panel-footer">
     <div class="container">
-      <div class="row">
         <section id="hours" class="col-sm-4">
           <span>Hours:</span><br>
-          Tue-Sun: 8:00am - 09:00pm<br>
+          Tue-Sat: 8:00am - 09:00pm<br>
           Monday Closed
           <hr class="visible-xs">
         </section>
@@ -134,7 +115,6 @@
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/ajax-utils.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
