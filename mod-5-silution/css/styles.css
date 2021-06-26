@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #12dec9;
+  background-color: #61122f;
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -12,15 +12,20 @@ body {
   border: 0;
 }
 
-
+#logo-img {
+  background: url('../images/restaurant-logo_large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
 
 .navbar-brand {
   padding-top: 25px;
 }
-.navbar-brand h1 { /* store name */
+.navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
   color: #557c3e;
-  font-size: 2em;
+  font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
@@ -31,10 +36,10 @@ body {
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-.navbar-brand p { /* everything you need */
+.navbar-brand p { /* Kosher cert */
   color: #000;
   text-transform: uppercase;
-  font-size: .9em;
+  font-size: .7em;
   margin-top: 15px;
 }
 .navbar-brand p span { /* Star-K */
@@ -62,7 +67,7 @@ body {
   text-align: right;
   padding-bottom: 0;
 }
-#phone div { /* everything you need */
+#phone div { /* We Deliver */
   color: #557c3e;
   text-align: right;
   padding-right: 15px;
@@ -127,11 +132,11 @@ body {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
 #menu-tile {
-  background: url('../images/grossarynew.jpg') no-repeat;
+  background: url('../images/menu-tile.jpg') no-repeat;
   background-position: center;
 }
 #specials-tile {
-  background: url('../images/offer.jpg') no-repeat;
+  background: url('../images/specials-tile.jpg') no-repeat;
   background-position: center;
 }
 #menu-tile span, #specials-tile span, #map-tile span {
@@ -146,18 +151,12 @@ body {
   color: #fff;
   opacity: .8;
 }
-#payment{
-  color:black;
-  font-size: 120%;
-  font-style: italic;
- 
-}
 /* END HOME PAGE */
 
 /* MENU CATEGORIES PAGE */
 .category-tile { 
   position: relative;
-  border: 2px solid black;
+  border: 2px solid #3F0C1F;
   overflow: hidden;
   width: 200px;
   height: 200px;
@@ -233,114 +232,53 @@ h3.menu-item-title {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  .sign-up-form{
-<<<<<<< HEAD
-    width: 30%;
-  }
-=======
-  width: 30%;
- }
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
   .container .jumbotron {
-    background: url('../images/shop_1200.jpg') no-repeat ;
-    height: 724px;
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
   }
-
-  #aboutrow{
-  vertical-align: all;
-  padding-right: 42%;
-  padding-left:42%;
-}
-
-#abouttile{
-  border: 1px solid black;
-  width: 50%;
-  color:black;
-}
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-  .sign-up-form{
-  width: 30%;
- }
   /* Header */
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
   /* End Header */
 
   /* Home Page */
   .container .jumbotron {
-    background: url('../images/shop_992.jpg') no-repeat;
-    height: 600px;
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
   }
   /* End Home Page */
-
-  #aboutrow{
-  vertical-align: all;
-  padding-right: 40%;
-  padding-left:40%;
-}
-
-#abouttile{
-  border: 1px solid black;
-  width: 50%;
-  color:black;
-}
-<<<<<<< HEAD
-.sign-up-form{
-    width: 30%;
-  }
-=======
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  .sign-up-form{
-  width: 40%;
- }
   /* Home Page */
   .container .jumbotron {
-    background: url('../images/shop_768.jpg') no-repeat;
-    height: 500px;
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
   }
-
-  #aboutrow{
-  vertical-align: all;
-  padding-right: 30%;
-  padding-left:30%;
-}
   /* End Home Page */
-
-  #abouttile{
-  border: 1px solid black;
-  width: 50%;
-  color:black;
-}
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-<<<<<<< HEAD
-=======
-  .container .jumbotron {
-    background: url('../images/shop_479.jpg') no-repeat;
-    height: 400px;
-  }
-  .sign-up-form{
-  width: 90%;
- }
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
-
   /* Header */
   .navbar-brand {
     padding-top: 10px;
     height: 80px;
   }
-  .navbar-brand h1 { /* store name */
+  .navbar-brand h1 { /* Restaurant name */
     padding-top: 10px;
     font-size: 5vw; /* 1vw = 1% of viewport width */
   }
-  .navbar-brand p { /* everthing you need */
+  .navbar-brand p { /* Kosher cert */
     font-size: .6em;
     margin-top: 12px;
   }
@@ -405,34 +343,11 @@ h3.menu-item-title {
   .menu-item-description {
     text-align: center;;
   }
-
-  #aboutrow{
-  vertical-align: all;
-  padding-right: 25%;
-  padding-left:25%;
-}
-#abouttile{
-  border: 1px solid black;
-  width: 50%;
-  color:black;
-}
 }
 
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
-  .container .jumbotron {
-    background: url('../images/shop_479.jpg') no-repeat;
-<<<<<<< HEAD
-    height: 500px;
-  }
-=======
-    height: 280px;
-  }
-  .sign-up-form{
-  width: 80%;
- }
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
   /* Header */
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 5px;
@@ -454,94 +369,7 @@ h3.menu-item-title {
     float: left;
     width: 100%;
   }
-
-  #aboutrow{
-  vertical-align: all;
-  padding-right:30%;
-  padding-left:30%;
-  }
-#abouttile{
-  border: 1px solid black;
-  width: 95%;
-  color:black;
- }
-<<<<<<< HEAD
- .sign-up-form{
-  width: 100%;
- }
-=======
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
-}
-/*about page*/
-
-
-.abouttextbar{
-padding: 5px;
-width: 50px;
-}
-.aboutbutton{
-  padding: 2px;
-  margin-top: 30px;
-}
-#aboutheading{
-  margin-bottom: 40px;
 }
 
-/*sign in page*/
-.sign-up-form{
-<<<<<<< HEAD
-  width:90%;
-=======
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
-  box-shadow: 0 0 3px rgba(0,0,0,0.3);
-  background:#fff;
-  padding: 20px;
-  margin: 8% auto 0;
-  text-align: center;
-  align-content: center;
-  color:  #000000;
-}
-.sign-up-form h1{
-  color: #1c8adb;
-  margin-bottom: 20%;
-}
- 
-.input-box{
-  border-radius: 20px;
-  padding: 10px;
-  margin: 1% ;
-  width: 100%;
-  border: 1px solid #999;
-  outline: none;
-}
-button{
-  color: #fff;
-  width: 100%;
-  padding: 10px;
-  border-radius: 20px;
-  font-size: 15px;
-  margin: 1%;
-  border: none;
-  outline: none;
-}
 
-.signup-btn{
-  background-color: #1c8adb;
 
-}
-.twitter-btn{
-  background-color: #21afde;
-}
-.HR{
-  margin-top: 20px;
-  width: 80%;
-}
-.OR{
-  background: #fff;
-  width: 30px;
-  margin: -30 auto 10px;
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
