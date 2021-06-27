@@ -235,8 +235,13 @@ h3.menu-item-title {
 @media (min-width: 1200px) {
   .sign-up-form{
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 30%;
   }
+=======
+  width: 30%;
+ }
+>>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
 =======
   width: 30%;
  }
@@ -286,9 +291,12 @@ h3.menu-item-title {
   color:black;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .sign-up-form{
     width: 30%;
   }
+=======
+>>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
 =======
 >>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
 }
@@ -329,6 +337,9 @@ h3.menu-item-title {
   .sign-up-form{
   width: 90%;
  }
+<<<<<<< HEAD
+>>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
+=======
 >>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
 
   /* Header */
@@ -424,14 +435,20 @@ h3.menu-item-title {
   .container .jumbotron {
     background: url('../images/shop_479.jpg') no-repeat;
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 500px;
   }
 =======
+=======
+>>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
     height: 280px;
   }
   .sign-up-form{
   width: 80%;
  }
+<<<<<<< HEAD
+>>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
+=======
 >>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
   /* Header */
   .navbar-brand h1 { /* Restaurant name */
@@ -466,6 +483,7 @@ h3.menu-item-title {
   color:black;
  }
 <<<<<<< HEAD
+<<<<<<< HEAD
  .sign-up-form{
   width: 100%;
  }
@@ -474,6 +492,10 @@ h3.menu-item-title {
 }
 /*about page*/
 
+=======
+}
+/*about page*/
+>>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
 
 .abouttextbar{
 padding: 5px;
@@ -525,9 +547,61 @@ button{
   outline: none;
 }
 
+<<<<<<< HEAD
 .signup-btn{
   background-color: #1c8adb;
 
+=======
+.abouttextbar{
+padding: 5px;
+width: 50px;
+}
+.aboutbutton{
+  padding: 2px;
+  margin-top: 30px;
+}
+#aboutheading{
+  margin-bottom: 40px;
+}
+
+/*sign in page*/
+.sign-up-form{
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  background:#fff;
+  padding: 20px;
+  margin: 8% auto 0;
+  text-align: center;
+  align-content: center;
+  color:  #000000;
+}
+.sign-up-form h1{
+  color: #1c8adb;
+  margin-bottom: 20%;
+}
+ 
+.input-box{
+  border-radius: 20px;
+  padding: 10px;
+  margin: 1% ;
+  width: 100%;
+  border: 1px solid #999;
+  outline: none;
+}
+button{
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 1%;
+  border: none;
+  outline: none;
+}
+
+.signup-btn{
+  background-color: #1c8adb;
+
+>>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
 }
 .twitter-btn{
   background-color: #21afde;
@@ -541,7 +615,11 @@ button{
   width: 30px;
   margin: -30 auto 10px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
 =======
 }
 >>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
