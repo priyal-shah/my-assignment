@@ -234,19 +234,10 @@ h3.menu-item-title {
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .sign-up-form{
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 30%;
+   width: 30%;
   }
-=======
-  width: 30%;
- }
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
-=======
-  width: 30%;
- }
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
-  .container .jumbotron {
+
+ .container .jumbotron {
     background: url('../images/shop_1200.jpg') no-repeat ;
     height: 724px;
   }
@@ -290,15 +281,9 @@ h3.menu-item-title {
   width: 50%;
   color:black;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 .sign-up-form{
     width: 30%;
   }
-=======
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
-=======
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
 }
 
 /********** Small devices only **********/
@@ -328,21 +313,14 @@ h3.menu-item-title {
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-<<<<<<< HEAD
-=======
-  .container .jumbotron {
+.container .jumbotron {
     background: url('../images/shop_479.jpg') no-repeat;
     height: 400px;
   }
   .sign-up-form{
   width: 90%;
  }
-<<<<<<< HEAD
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
-=======
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
-
-  /* Header */
+ /* Header */
   .navbar-brand {
     padding-top: 10px;
     height: 80px;
@@ -434,23 +412,13 @@ h3.menu-item-title {
 @media (max-width: 479px) {
   .container .jumbotron {
     background: url('../images/shop_479.jpg') no-repeat;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    height: 500px;
+   height: 500px;
   }
-=======
-=======
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
-    height: 280px;
-  }
+
   .sign-up-form{
   width: 80%;
  }
-<<<<<<< HEAD
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
-=======
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
-  /* Header */
+/* Header */
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 5px;
     font-size: 6vw;
@@ -482,20 +450,14 @@ h3.menu-item-title {
   width: 95%;
   color:black;
  }
-<<<<<<< HEAD
-<<<<<<< HEAD
- .sign-up-form{
+.sign-up-form{
   width: 100%;
  }
-=======
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
-}
+
 /*about page*/
 
-=======
-}
+
 /*about page*/
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
 
 .abouttextbar{
 padding: 5px;
@@ -511,10 +473,7 @@ width: 50px;
 
 /*sign in page*/
 .sign-up-form{
-<<<<<<< HEAD
   width:90%;
-=======
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
   box-shadow: 0 0 3px rgba(0,0,0,0.3);
   background:#fff;
   padding: 20px;
@@ -547,11 +506,10 @@ button{
   outline: none;
 }
 
-<<<<<<< HEAD
+
 .signup-btn{
   background-color: #1c8adb;
 
-=======
 .abouttextbar{
 padding: 5px;
 width: 50px;
@@ -600,8 +558,6 @@ button{
 
 .signup-btn{
   background-color: #1c8adb;
-
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
 }
 .twitter-btn{
   background-color: #21afde;
@@ -614,12 +570,5 @@ button{
   background: #fff;
   width: 30px;
   margin: -30 auto 10px;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
-=======
-}
->>>>>>> 4224ed451fd0485ac5f45834fe834fd9d0f60a4c
