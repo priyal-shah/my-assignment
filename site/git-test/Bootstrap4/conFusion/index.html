@@ -9,63 +9,315 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
-    <title>Ristorante Con Fusion: About Us</title>
-
+    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesnew.css">
+    <title>Ristorante Con Fusion</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-dark fixed-top navbar-expand-sm ">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="mr-auto " src="img/logo.png" height="30" width="41"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class=" nav-item active"><a class="nav-link"href="#"><span class="fa fa-home"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
+            </div>
+
+            <!--logn button-->
+            <span class="navbar-text">
+                <a id="loginbtn">
+                    <span class="fa fa-sign-in"></span>
+                    Login
+                </a>
+            </span>
+        </div>
+    </nav>
+
+    <!-- LOGIN MODAL-->
+    <div id="loginmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header" id="loginheader">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" id="ligincross">&times;</button>
+                </div>
+                <div class="modal-body" id="loginbody">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="inputemail">Email</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="inputemail" placeholder="Enter Email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="inputpassward">Passward</label>
+                                <input type="passward" class="form-control form-control-sm mr-1" id="inputpassward" placeholder="Enter Passward">
+                            </div>
+                            <div class="form-group col-sm-auto">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">
+                                    <label class="form-check-label">remember me</label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="btn-group">
+                                    <button class="btn bg-secondary  ml-3" data-dismiss="modal">Cancel</button>
+                                    <button class="btn bg-primary ml-1" type="submit">Sign in</button>
+                                </div>
+                            </div>
+                        </div>         
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <header class="jumbotron">
-        <div class="container">
-            <div class="row row-header">
+        <div class="container"> 
+            <div class="row">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm">
+                <div class="col-12 col-sm-3 ">
+                        <img src="img/logo.png" class="img-fluid">
+                </div>
+                <!--reserve table btn-->
+                <div class="col-12 col-sm-3 align-self-center mt-2  " id="reservetablebtn">
+                    <a role="button "  class="btn btn-sm bg-warning btn-block"  >Reserve Table</a>
                 </div>
             </div>
         </div>
     </header>
 
+    <!--RESERVE TABLE MODAL-->
+
+    <div id="reservetablemodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header" id="reserveheader">
+                    <h4 class="modal-title">Reserve Table</h4>
+                    <button type="button" class="close" data-dismiss="modal" id="reservercross">&times;</button>
+                </div>
+                <div class="modal-body" id="reservebody">
+                    <form>
+                        <div class="form-group row">
+                            <label for="number of guests" class="col-form-label col-12 col-sm-2 ">Number of Guests</label>
+                            <div class="col-12 col-sm-10 align-self-center">
+                                <div class="row">
+                                    <div class="form-check col-2 col-sm-2">
+                                        <div class="row">
+                                            <input type="radio" class="form-control col-6 col-sm-6" name="number-of-guests">
+                                            <label class="form-check-label col-6 col-sm-6" for="number-of-guests">1</label>
+                                        </div>
+                                    </div>
+                                     <div class="form-check col-sm-2 col-2">
+                                        <div class="row">
+                                            <input type="radio" class="form-control col-sm-6 col-6" name="number-of-guests">
+                                            <label class="form-check-label col-sm-6 col-6" for="number-of-guests">2</label>
+                                        </div>
+                                    </div>
+                                     <div class="form-check col-sm-2 col-2">
+                                        <div class="row">
+                                            <input type="radio" class="form-control col-sm-6 col-6" name="number-of-guests">
+                                            <label class="form-check-label col-sm-6 col-6" for="number-of-guests">3</label>
+                                        </div>
+                                    </div>
+                                     <div class="form-check col-sm-2 col-2">
+                                        <div class="row">
+                                            <input type="radio" class="form-control col-sm-6 col-6" name="number-of-guests">
+                                            <label class="form-check-label col-sm-6 col-6" for="number-of-guests">4</label>
+                                        </div>
+                                    </div>
+                                     <div class="form-check col-sm-2 col-2">
+                                        <div class="row">
+                                            <input type="radio" class="form-control col-sm-6 col-6" name="number-of-guests">
+                                            <label class="form-check-label col-sm-6 col-6" for="number-of-guests">5</label>
+                                        </div>
+                                    </div>
+                                     <div class="form-check col-sm-2 col-2">
+                                        <div class="row">
+                                            <input type="radio" class="form-control col-sm-6 col-6" name="number-of-guests">
+                                            <label class="form-check-label col-sm-6 col-6" for="number-of-guests">6</label>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="section" class="col-form-label col-12 col-sm-2 ">Section</label>
+                            <div class="btn-group">
+                                <div class="col-12 col-sm-5">
+                                     <button type="radio" class="bg-success btn text-white" value="">Non-Smoking</button>
+                                </div>
+                                 <div class="col-12 col-sm-5">
+                                    <button type="radio" class="bg-danger btn ml-1 text-white" value="">Smoking</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="number of guests" class="col-form-label col-12 col-sm-2 ">Date and Time</label>
+                            <div class="col-12 col-sm-5">
+                                <input type="text" name="date" id="date" class="form-control" placeholder="Date" >
+                            </div>
+                            <div class="col-12 col-sm-5">
+                                <input type="text-center" name="time" id="time" class="form-control" placeholder="Time" >
+                            </div>
+                            
+                        </div>
+ 
+                        <div class="form-group row offset-2">
+                            <div class="btn-group"> 
+                            <div class="col-12 col-sm-2" id="reservecancel">
+                                <button class="bg-secondary btn  btm-sm text-white" type="button" data-dismiss="modal">Cancel</button>
+                            </div>
+                            <div class="col-12 col-sm-2">
+                                <button class="bg-primary btn  btm-sm ml-1 ml-sm-5 text-white" type="button" data-target="#reserve-table">Reserve</button>
+                            </div>
+                            </div>
+                        </div>       
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <div class="container">
-        <div>
-            <div>
-               <h3>About Us</h3>
-               <hr>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-12 col-sm-6 align-self-center-center about">
-                <h2>Our History</h2>
-                <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
-                <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
-            </div>
-            <div>
-            </div>
-        </div>
+        <!--CAROUSEL-->
 
+         <div class="row row-content">
+           <div class="col">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid"
+                                src="img/uthappizza.png" alt="Uthappizza">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">$4.99</span></h2>
+                                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                                Italian pizza, topped with Cerignola olives, ripe vine
+                                cherry tomatoes, Vidalia onion, Guntur chillies and
+                                Buffalo Paneer.</p>
+                            </div>
+                        </div>
 
-        <div>
-            <div>
-                <h2>Corporate Leadership</h2>
-                <h3>Peter Pan <small>Chief Epicurious Officer</small></h3>
-                <p>Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
-                <h3>Dhanasekaran Witherspoon <small>Chief Food Officer</small></h3>
-                <p>Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, <em>Everything that runs, wins, and everything that stays, pays!</em></p>
-                <h3>Agumbe Tang <small>Chief Taste Officer</small></h3>
-                <p>Blessed with the most discerning gustatory sense, Agumbe, our CTO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, <em>You click only if you survive my lick.</em></p>
-                <h3>Alberto Somayya <small>Executive Chef</small></h3>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid"
+                                src="img/buffet.png" alt="Buffet">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="media-heading mt-0">Weekend Grand Buffet
+                                <span class="badge badge-danger">NEW</span>
+                                </h2>
+                                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid"
+                                src="img/alberto.png" alt="Alberto">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                            International experience having worked closely with
+                            whos-who in the culinary world, he specializes in
+                            creating mouthwatering Indo-Italian fusion experiences.
+                            </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                     <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
             </div>
        </div>
 
-    </div>
 
-    <footer class="footer">
+        <div class="row  mt-5">
+            <div class="col-sm-5 col-12 order-sm-last align-self-center">
+                <h3>Our Lipsmacking Culinary Creations</h3>
+            </div>
+            <div class="col-sm-7 col-12 order-sm-first media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                            src="img/uthappizza.png" alt="Uthappizza">
+                    <div class="media-body">
+                        <h2 class=" media-heading mt-0">Uthappizza
+                        <span class=" badge badge-danger">HOT</span>
+                        <span class="badge badge-pill badge-secondary">$4.99</span>
+                        </h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                            Italian pizza, topped with Cerignola olives, ripe vine
+                            cherry tomatoes, Vidalia onion, Guntur chillies and
+                            Buffalo Paneer.</p>
+                    </div>
+            </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-12 col-sm-5 order-sm-first align-self-center">
+                <h3>This Month's Promotions</h3>
+            </div>
+            <div class="col-12 col-sm-7 order-sm-last media">
+                <img class="mr-3 d-flex img-thumbnail align-self-center" src="img/buffet.png">
+                <div class="media-body">
+                    <h2 class="media-heading mt-0">Weekend Grand Buffet
+                    <span class="badge badge-danger">NEW</span>
+                    </h2>
+                    <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                </div>           
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 col-sm-5 order-sm-last align-self-center">
+                <h3>Meet our Culinary Specialists</h3>
+            </div>
+             <div class="col-12 col-sm-7 order-sm-first media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                            src="img/alberto.png" alt="Alberto Somayya">
+                    <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                            International experience having worked closely with
+                            whos-who in the culinary world, he specializes in
+                            creating mouthwatering Indo-Italian fusion experiences.
+                            </p>
+                    </div>
+                </div>  
+        </div>
+
+
+    </div>
+</div>
+
+    <footer class="footer mt-5">
         <div class="container">
             <div class="row">             
                 <div class="col-4 offset-1 col-sm-2">
@@ -80,22 +332,22 @@
                 <div class="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              Tel.: +852 1234 5678<br>
-		              Fax: +852 8765 4321<br>
-		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
+                      121, Clear Water Bay Road<br>
+                      Clear Water Bay, Kowloon<br>
+                      HONG KONG<br>
+                      <i class="fa fa-phone fa-lg"></i> Tel.: +852 1234 5678<br>
+                      <i class="fa fa-fax fa-lg"></i> Fax: +852 8765 4321<br>
+                      <i class="fa fa-envelope fa-lg"></i> Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+                   </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
-                        <a href="http://google.com/+">Google+</a>
-                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                        <a href="http://www.linkedin.com/in/">LinkedIn</a>
-                        <a href="http://twitter.com/">Twitter</a>
-                        <a href="http://youtube.com/">YouTube</a>
-                        <a href="mailto:">Mail</a>
+                        <a class="btn btn-social-icon btn-google" http://google.com/+><i class="fa fa-lg fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
                     </div>
                 </div>
            </div>
@@ -105,11 +357,14 @@
                 </div>
            </div>
         </div>
-    </footer>
-     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    </footer>   
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 
-</html>
+</htmlr
