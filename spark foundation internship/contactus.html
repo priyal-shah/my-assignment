@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sparks fundation</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+	    		
+	    		<ul class="Navbar">
+	    		<li class="navbarlist">
+	    			<a  class="navlink" href="./index.html">Home</a>
+	    		</li>
+	    		<li class="navbarlist" > 
+	    			<a class="navlink">About</a>
+	    		</li>
+	    		<li class="navbarlist" style="background-color: grey; border-radius: 15px;">
+	    			<a class="navlink">Contact Us</a>
+	    		</li>
+	    	</ul>
+
+	</header>
+
+	<div>
+		<div class="contact-container">
+			<p class="contact-p" style="font-size: 130%;"><i><b>Please fill the form below we will contact you soon...</b></i></p>
+			<div class="contact-subcontainer">
+				<form  action="#">
+				<div class="div">
+					<label>Name</label>
+					<input type="text" name="name" placeholder="Enter your name" id="name" required minlength ="3">
+				</div>
+				<div class="div">
+					<label>Email</label>
+					<input type="email" name="email" placeholder="Enter your Email" required>
+				</div>
+				<div class="div">
+					<label>Tel. no.</label>
+					<input type="tel" name="phone" placeholder="Enter your contact number" minlength="10" maxlength="10">
+				</div>
+				<div class="div">
+					<label>Suggestion</label>
+					<input type="text" name="suggestion" placeholder="write here..." >
+				</div>
+				<div class="div">
+					<label>Query</label>
+					<input type="text" name="query" placeholder="write here..." >
+					
+				</div>
+ 
+			</div>
+			<button class="submitbtn">Submit</button>
+		</form>
+
+		</div>
+
+		<!-- our contact info -->
+
+			<div class="ourcontact">
+				<img src="./img/img6.jpg">
+				<h3 style="text-align: center0; top: 0px;left: 40%; position: absolute; ">Our Contact</h3>
+				<div class="div">
+					<label>Email:</label>
+					<a href="#">priyal0725@gmail.com</a>
+				</div>
+				<br>
+				<div class="div">
+					<label>Tel. no. :</label>
+					<a href="tel: 9171810266">917180266</a>
+				</div>
+			</div>
+
+	</div>
+</body>
+<script type="text/javascript">
+	function checkname(){
+		console.log("hello");
+		if(getElementById("name").value.length<3){
+			document.alert("enter your full name!!");
+		}
+	}
+
+</script>
+</html>
