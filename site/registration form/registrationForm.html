@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+
+</head>
+<body > 
+	<div class="container justify-content-center "  >
+		
+		<div class="row" >
+
+			<div>
+				<form   method="put" onsubmit="return(validation())">
+					<p class="col-12 justify-content-center form-heading"><strong>Registration Form</strong></p>
+
+					<div class="row m-3">
+						<label class="col-12 col-md-2">First Name<span style="color: red;"><sup>*</sup></span></label>
+						<input type="text" name="fname" placeholder="first name"  class=" col-12 col-md-10" id="fname" >
+
+						<div class="col-12 m-1 " id="ferror" style="color: red;"></div>
+					</div>
+
+					<div class="row m-3">
+						<label class="col-md-2 col-12">Middle Name</label>
+						<input type="text" name="mname" placeholder="middle name" title="middle name" class="col-md-10 col-12">
+					</div>
+
+					<div class="row m-3">
+						<label class="col-12 col-md-2">Last Name<span style="color: red;"><sup>*</sup></span></label>
+						<input type="text" name="lname" class="col-12 col-md-10" placeholder="last name" id="lname">
+
+						<div class="col-12 m-1 " id="lerror" style="color: red;"></div>
+					</div>
+
+					<div class="row m-3">
+						<div class="col-12 col-md-6">
+							<div class="row">
+								<label class="col-12 col-md-4">Date of Birth<span style="color: red;"><sup>*</sup></span></label>
+								<input type="date" name="dob" class="col-12 col-md-8" id="dob"> 
+								<div class="col-12 m-1 " id="doberror" style="color: red;"></div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<div class="row">
+								<label class="col-12 col-md-3 offset-md-2">Gender<span style="color: red;"><sup>*</sup></span></label>
+								<select class="col-12 col-md-7" id="gender">
+									<option>select</option>
+									<option>Female</option>
+									<option>Male</option>
+									<option>Other</option>
+								</select>
+
+								<div class="col-12 m-1 " id="gerror" style="color: red;"></div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="row m-3">
+						<label class="col-12 col-md-2">Address<span style="color: red;"><sup>*</sup></span></label>
+						<input type="text" name="address" class="col-12 col-md-10" placeholder="Address" id="address">
+
+						<div class="col-12 m-1 " id="aerror" style="color: red;"></div>
+					</div>
+
+					<div class="row m-3">
+						<div class="col-12 col-md-4">
+							<div class="row">
+								<label class="col-12 col-md-6">City</label>
+								<input type="text" name="city" class="col-12 col-md-6" placeholder="City">
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="row">
+								<label class="col-12 col-md-3 offset-md-2">State</label>
+								<input type="text" name="sate" class="col-12 col-md-7" placeholder="State">
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="row">
+								<label class="col-12 col-md-4">Pin code</label>
+								<input type="text" name="pin" class="col-12 col-md-8" placeholder="Pin code" id="pin">
+
+								<div class="col-12 m-1 " id="pinerror" style="color: red;"></div>
+							</div>		
+						</div>
+					</div>
+
+					<div class="row m-3">
+						<div class="col-12 col-md-6">
+							<div class="row">
+								<label class="col-12 col-md-4">Student Email</label>
+								<input type="text" name="semail" class="col-12 col-md-8" placeholder="student email">
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<div class="row">
+								<label class="col-12 col-md-4">student mob. no.<span style="color: red;"><sup>*</sup></span></label>
+								<input type="text" name="mob" class="col-12 col-md-8" placeholder="Mobile no." id="mob">
+
+								<div class="col-12 m-1 " id="moberror" style="color: red;"></div>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="row m-3">
+						<div class="col-12 col-md-4">
+							<div class="row">
+								<label class="col-12 col-md-6">Programe<span style="color: red;"><sup>*</sup></span></label>
+								<input type="text" name="programe" class="col-12 col-md-6	" placeholder="Program" id="program">
+
+								<div class="col-12 m-1 " id="progerror" style="color: red;"></div>
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="row">
+								<label class="col-12 col-md-3 offset-md-1">Branch<span style="color: red;"><sup>*</sup></span></label>
+								<input type="text" name="branch" class="col-12 col-md-8" placeholder="Branch" id="Branch">
+
+								<div class="col-12 m-1 " id="berror" style="color: red;"></div>
+							</div>
+						</div>
+
+						<div class="col-12 col-md-4">
+							<div class="row">
+								<label class="col-12 col-md-3 offset-md-1">Year<span style="color: red;"><sup>*</sup></span></label>
+								<input type="text" name="year" class="col-12 col-md-8" placeholder="Year" id="year">
+								<div class="col-12 m-1 " id="yerror" style="color: red;"></div>
+							</div>
+						</div>
+
+					</div>
+
+
+					<div class="row m-3">
+						<label class="col-12 col-md-2">College Name<span style="color: red;"><sup>*</sup></span> </label>
+						<input type="text" name="college" class="col-12 col-md-10" placeholder="College Name" id="colg">
+
+						<div class="col-12 m-1 " id="cerror" style="color: red;"></div>
+					</div>
+
+					<br>
+					<div class="row  m-3">
+						<div class="col-12 col-md-4 offset-md-2">
+							<div class="row">
+								<p class="col-12 ">upload your college ID card<span style="color: red;"><sup>*</sup></span></p>
+								<input type="file" name="idcard" class="col-12 " required>
+					
+							</div>
+						</div>
+					
+						<div class="col-12 col-md-6">
+							<div class="row">
+								<p class="col-12 ">marksheet of recent semester<span style="color: red;"><sup>*</sup></span></p>
+								<input type="file" class="col-12 " name="marksheet" required="">	
+							</div>
+						</div>
+					</div>
+
+					<br>
+					<div class="col-12 col-sm-auto m-3">---> Parents details <---</div>
+
+					<div class="row m-3">
+						<label class="col-12 col-md-2">Father's Name<span style="color: red;"><sup>*</sup></span></label>
+						<input type="text" name="fathername" class="col-12 col-md-10" placeholder="Father's Name" id="ftname">
+
+						<div class="col-12 m-1 " id="fterror" style="color: red;"></div>
+					</div>
+
+					<div class="row m-3">
+						<div class="col-12 col-md-6">
+							<div class="row">
+								<label class="col-12 col-md-4">Ocqupation</label>
+								<input type="text" name="ocqupation" class="col-12 col-md-8" placeholder="Ocquepation">
+							</div>							
+						</div>
+						<div class="col-12 col-md-6">
+							<div class="row">
+								<label class="col-12 col-md-4">Mobile no.</label>
+								<input type="text" name="fmob" class="col-12 col-md-8" >
+							</div>			
+						</div>
+				
+					</div>
+
+
+					<div class="row m-3">
+						<label class="col-12 col-md-2">Mother's Name <span style="color: red;"><sup>*</sup></span></label>
+						<input type="text" name="mothername" class="col-12 col-md-10" placeholder="Mother's Name" id="mtname">
+
+						<div class="col-12 m-1 " id="mterror" style="color: red;"></div>
+					</div>
+					
+					<div class="row m-3">
+						<div class="col-12 col-md-6">
+							<div class="row">
+								<label class="col-12 col-md-4">Ocqupation</label>
+								<input type="text" name="ocqupation" class="col-12 col-md-8" placeholder="Ocquepation">
+							</div>							
+						</div>
+						<div class="col-12 col-md-6">
+							<div class="row">
+								<label class="col-12 col-md-4">Mobile no.</label>
+								<input type="text" name="fmob" class="col-12 col-md-8" >
+							</div>			
+						</div>
+				
+					</div>
+
+					<div class="row m-5">
+						<input type="checkbox" name="agree" class="col-2 col-md-2"  id="agree" required>
+						<label class="col-8 col-md-8" for="agree">I agree all the terms and conditions</label>
+					</div>
+
+					<br>
+					<br>
+					<div class="row m-3">
+						<input type="submit" name="submit" class="col-6 col-md-3 mb-2 offset-2 bg-primary btn" >
+						<button class="col-6 col-md-3 mb-2 offset-2 btn bg-danger">Cancel</button>
+					</div>
+
+			</form>
+			</div>
+		
+		</div>
+		
+		
+	</div>
+
+</body>
+<script type="text/javascript">
+	
+	function validation(){
+		var x=document.getElementById("fname").value;
+		if(x.length==0){
+			document.getElementById("fname").style.borderColor="red";
+			document.getElementById("ferror").innerHTML="required*";
+			window.location.assign("#ferror");
+			return false;
+		}
+		if(x.length<2){
+			document.getElementById("fname").style.borderColor="red";
+			document.getElementById("ferror").innerHTML="length should be greater than or equal to 2";
+			window.location.assign("#ferror");
+            return false;
+		}
+		else{
+			document.getElementById("fname").style.borderColor="grey";
+			document.getElementById("ferror").innerHTML="";
+		}
+
+		// last name
+		var x=document.getElementById("lname").value;
+		if(x.length==0){
+			document.getElementById("lname").style.borderColor="red";
+			document.getElementById("lerror").innerHTML="required*";
+			window.location.assign("#lerror");
+			return false;
+		}
+		if(x.length<2){
+			document.getElementById("lname").style.borderColor="red";
+			document.getElementById("lerror").innerHTML="length should be greater than or equal to 2";
+			window.location.assign("#lerror");
+            return false;
+		}
+		else{
+			document.getElementById("lname").style.borderColor="grey";
+			document.getElementById("lerror").innerHTML="";
+		}
+
+		// dob
+		var x=document.getElementById("dob").value;
+		if(x.length==0){
+			document.getElementById("dob").style.borderColor="red";
+			document.getElementById("doberror").innerHTML="required*";
+			window.location.assign("#doberror");
+			return false;
+		}
+		else{
+			document.getElementById("dob").style.borderColor="grey";
+			document.getElementById("doberror").innerHTML="";
+		}
+
+		// gender
+		var x=document.getElementById("gender").value;
+		if(x=="select"){
+			document.getElementById("gender").style.borderColor="red";
+			document.getElementById("gerror").innerHTML="required*";
+			window.location.assign("#gerror");
+			return false;
+		}
+		else{
+			document.getElementById("gender").style.borderColor="grey";
+			document.getElementById("gerror").innerHTML="";
+		}
+
+		// address
+		var x=document.getElementById("address").value;
+		if(x.length==0){
+			document.getElementById("address").style.borderColor="red";
+			document.getElementById("aerror").innerHTML="required*";
+			window.location.assign("#aerror");
+			return false;
+		}
+		if(x.length<5){
+			document.getElementById("addess").style.borderColor="red";
+			document.getElementById("aerror").innerHTML="length should be greater than or equal to 5";
+			window.location.assign("#aerror");
+            return false;
+		}
+		else{
+			document.getElementById("addess").style.borderColor="grey";
+			document.getElementById("aerror").innerHTML="";
+		}
+
+		//pincode
+		var x=document.getElementById("pin").value;
+		var pattern=/[A-Z]+/i
+		if(pattern.test(x)){
+			document.getElementById("pin").style.borderColor="red";
+			document.getElementById("pinerror").innerHTML="Should be a number";
+			window.location.assign("#pinerror");
+			return false;
+		}
+		else{
+			document.getElementById("pin").style.borderColor="grey";
+			document.getElementById("pinerror").innerHTML="";
+		}
+		
+
+        //mobile no
+		var x=document.getElementById("mob").value;
+		if(x.length==0){
+			console.log("helo");
+			document.getElementById("mob").style.borderColor="red";
+			document.getElementById("moberror").innerHTML="required*";
+			window.location.assign("#moberror");
+			return false;
+		}
+		var pattern=/[a-z \s]+/i
+		if(pattern.test(x)){ 
+			document.getElementById("mob").style.borderColor="red";
+			document.getElementById("moberror").innerHTML="invalid number";
+			window.location.assign("#moberror");
+            return false;
+		}
+		if(x.length<10 ||x.length>10){ 
+			document.getElementById("mob").style.borderColor="red";
+			document.getElementById("moberror").innerHTML="invalid number";
+			window.location.assign("#moberror");
+            return false;
+		}
+		else{
+			document.getElementById("mob").style.borderColor="grey";
+			document.getElementById("moberror").innerHTML="";
+		}
+
+		//program
+		var x=document.getElementById("program").value;
+		if(x.length==0){
+			document.getElementById("program").style.borderColor="red";
+			document.getElementById("progerror").innerHTML="required*";
+			window.location.assign("#progerror");
+			return false;
+		}
+		if(x.length<2){
+			document.getElementById("program").style.borderColor="red";
+			document.getElementById("progerror").innerHTML="length should be greater than or equal to 2";
+			window.location.assign("#progerror");
+            return false;
+		}
+		else{
+			document.getElementById("program").style.borderColor="grey";
+			document.getElementById("progerror").innerHTML="";
+		}
+
+		//branch
+		var x=document.getElementById("branch").value;
+		if(x.length==0){
+			document.getElementById("branch").style.borderColor="red";
+			document.getElementById("berror").innerHTML="required*";
+			window.location.assign("#berror");
+			return false;
+		}
+		if(x.length<2){
+			document.getElementById("branch").style.borderColor="red";
+			document.getElementById("berror").innerHTML="length should be greater than or equal to 2";
+			window.location.assign("#berror");
+            return false;
+		}
+		else{
+			document.getElementById("branch").style.borderColor="grey";
+			document.getElementById("berror").innerHTML="";
+		}
+
+		//year
+		var x=document.getElementById("year").value;
+		if(x.length==0){
+			document.getElementById("year").style.borderColor="red";
+			document.getElementById("yerror").innerHTML="required*";
+			window.location.assign("#yerror");
+			return false;
+		}
+		var pattern=/[a-z]/i;
+		if(pattern.test(x)){
+			document.getElementById("year").style.borderColor="red";
+			document.getElementById("yerror").innerHTML="invalid year";
+			window.location.assign("#yerror");
+            return false;
+		}
+		else{
+			document.getElementById("year").style.borderColor="grey";
+			document.getElementById("yerror").innerHTML="";
+		}
+
+
+		//college 
+		var x=document.getElementById("colg").value;
+		if(x.length==0){
+			document.getElementById("colg").style.borderColor="red";
+			document.getElementById("cerror").innerHTML="required*";
+			window.location.assign("#cerror");
+			return false;
+		}
+		if(x.length<5){
+			document.getElementById("colg").style.borderColor="red";
+			document.getElementById("cerror").innerHTML="length should be greater than or equal to 5";
+			window.location.assign("#cerror");
+            return false;
+		}
+		else{
+			document.getElementById("colg").style.borderColor="grey";
+			document.getElementById("cerror").innerHTML="";
+		}
+
+		//father name
+
+		var x=document.getElementById("ftname").value;
+		if(x.length==0){
+			document.getElementById("ftname").style.borderColor="red";
+			document.getElementById("fterror").innerHTML="required*";
+			window.location.assign("#fterror");
+			return false;
+		}
+		if(x.length<2){
+			document.getElementById("ftname").style.borderColor="red";
+			document.getElementById("fterror").innerHTML="length should be greater than or equal to 2";
+			window.location.assign("#fterror");
+            return false;
+		}
+		else{
+			document.getElementById("ftname").style.borderColor="grey";
+			document.getElementById("fterror").innerHTML="";
+		}
+
+		//mother name
+
+		var x=document.getElementById("mtname").value;
+		if(x.length==0){
+			document.getElementById("mtname").style.borderColor="red";
+			document.getElementById("mterror").innerHTML="required*";
+			window.location.assign("#mterror");
+			return false;
+		}
+		if(x.length<2){
+			document.getElementById("mtname").style.borderColor="red";
+			document.getElementById("mterror").innerHTML="length should be greater than or equal to 2";
+			window.location.assign("#mterror");
+            return false;
+		}
+		else{
+			document.getElementById("mtname").style.borderColor="grey";
+			document.getElementById("mterror").innerHTML="";
+			return true;
+		}
+
+
+	}
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>glowing bulb</title>
+	</head> 
+	<body>
+
+<!-- glowing bulb -->
+		<div style="background-color: white; margin: 10%;">
+
+		<button style="background-color:blue; float: left; width: 20%; margin:5%; margin-top: 20%;" onclick="document.getElementById('bulb').src='./images/glow.jfif'" >on</button>
+
+		<img src="./images/notglow.png" style="float: left;" id="bulb" >
+		
+		<button style="background-color:blue; float:left; width:20%; margin:5%; margin-top: 20%;" onclick="offBulb()">off</button>	
+
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		function offBulb(){
+			document.getElementById('bulb').src='./images/notglow.png';
+
+		}
+
+
+	</script>
+</html>

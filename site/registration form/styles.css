@@ -1,0 +1,26 @@
+body{
+	background-color: grey;
+	font-family: cursive;
+}
+.container{
+	background-color: white;
+	margin: 5%;
+	padding: 3%;
+	display: block;
+	box-shadow: 10px 10px 10px 10px black;
+}
+
+.form-heading{
+	position: relative;
+	text-align: center;
+	font-size: 120%;
+	
+}
+.btn{
+	display: block;
+	box-shadow: 2px 2px 2px black;
+}
+
+form input:hover{
+	border-color: lightpink	;
+}
